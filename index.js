@@ -14,8 +14,8 @@ const vendorRouter = require('./Master/vendor/RouterV')
 const masterRouter = require('./Master/masters/RouterM')
 const tireRouter = require('./Master/tire model/tireModelRouter')
 const batteryRouter = require('./Master/Battery model/batteryRouter')
-const odometerRouter = require('./fleet/odometer/routerOdo')
-const documentRouter = require('./fleet/documents/docRouter')
+const odometerRouter = require('./odometer/routerOdo')
+const documentRouter = require('./documents/docRouter')
 const serviceRouter = require('./Maintenance/service category/routers')
 
 const cookieParser = require('cookie-parser');
