@@ -9,5 +9,12 @@ const pool = mysql.createConnection({
     database: process.env.DATABASE
 })
 
+// pool.connect(function (err) {
+//     if (err) {
+//         console.log(err)
+//     } else {
+//         console.log('connected')
+//     }
+// })
 
 module.exports = pool;
