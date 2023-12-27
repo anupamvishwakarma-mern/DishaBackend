@@ -3,6 +3,7 @@ const cors = require('cors');
 const multer = require('multer')
 const path = require('path');
 
+require('dotenv').config();
 const app = express();
 
 const userRouter = require('./Routers');
@@ -21,7 +22,7 @@ const serviceRouter = require('./Maintenance/service category/routers')
 const cookieParser = require('cookie-parser');
 
 const corsOptions = {
-    origin: 'http://localhost:8080',
+    origin: process.env.ORIGIN,
     credentials: true            //access-control-allow-credentials:true
 }
 

@@ -117,6 +117,7 @@ module.exports = {
         const selectQuery = `SELECT * FROM vehicletype`
 
         pool.query(selectQuery, (error, result) => {
+            console.log(error)
             if (error) return res.status(404).json({ error: "Internal server error" })
 
             return res.status(200).json(result);
@@ -226,6 +227,7 @@ module.exports = {
         const selectQuery = 'SELECT * FROM bodytype'
 
         pool.query(selectQuery, (error, result) => {
+            console.log(error)
             if (error) return res.status(404).json({ error: "Internal server error" })
 
             return res.status(200).json(result);
