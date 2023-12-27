@@ -1,11 +1,8 @@
 const jwt = require('jsonwebtoken');
 
-const { addDocuments, updateDocument, getDocuments, deleteDocument, searchDocuments } = require('./docService');
-
+const { getDocuments, updateDocument, addDocuments, deleteDocument, searchDocuments } = require('./Service');
 
 const router = require('express').Router();
-
-
 
 router.post('/add', addDocuments)
 router.post('/update', updateDocument)
