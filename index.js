@@ -46,7 +46,7 @@ app.use('/service', serviceRouter)
 app.use('/refresh', refreshRouter)
 
 
-const PORT = 8899;
+const PORT = process.env.PORT || 8899;
 // Start the server on port 8899
 app.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT}`);
